@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css.css">
+<title>Ayet Arama</title>
+</head>
+<body>
+<h1 id="baslik" class="simple-title mobilboyuth1">
+  <a href="" style="text-decoration:none; color:inherit;">Ayet Bulucu</a>
+</h1>
+<hr id="aracizgi" style="border: none; height: 1px; background-color: #4ea1a3; width: 100%; margin: 0;position: relative; top:-37px;">
+<button id="favorilerBtn">Favoriler</button>
+
+<div class="search-container" style="z-index: 1000;">
+  <input type="search" id="searchInput" placeholder="Kelime veya cümle girin..." autocomplete="off">
+  <button id="searchBtn">Ara</button>
+</div>
+<img src="logo.png" id="logoorta">
+<div class="scroll-wrapper" style=" margin: auto; position: relative; overflow-y:auto; border:1px solid #ccc; padding:5px;">
+    <div id="results"></div>
+</div>
+<div id="loading" style="display:none; text-align:center; margin: 20px 0;">
+  <span class="loading-icon">🔍</span> Aranıyor...
+</div>
+<button id="randomBtn" class="ortalapcsol" title="Rastgele Ayet">Rastgele</button>
+<button id="kapatBtn" class="ortalapkapatbtn">× Kapat</button>
+<button id="paylasBtn" title="Kopyala">Kopyala</button>
+<div id="themeToggle" class="ortalapcsag" title="Tema değiştir">
+  <div class="switch"></div>
+  <div id="themeLabel">Açık Mod</div>
+</div>
+
+<script src="script.js"></script>
+<script src="ayetler.js"></script>
+<div class="footer">
+  <div class="footer-left">2025 🌱 Ayet Bulucu</div>
+  <div class="footer-right">
+    <button title="Kapat">✕</button>
+    <a href="#" title="YouTube">📺</a>
+    <a href="#" title="Instagram">📸</a>
+    <a href="#" title="GitHub">🐱</a>
+    <a href="#" title="Mail">✉️</a>
+    <a href="#" title="Diğer">💬</a>
+  </div>
+</div>
+
+</body>
+</html>
