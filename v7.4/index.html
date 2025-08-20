@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/css.css">
+<title>Ayet Arama</title>
+</head>
+<body>
+<h1 id="baslik" class="simple-title mobilboyuth1">
+  <a href="" style="text-decoration:none; color:inherit;">Ayet Bulucu</a>
+</h1>
+<hr id="aracizgi" style="border: none; height: 1px; background-color: #4ea1a3; width: 100%; margin: 0;position: relative; top:-37px;">
+<button id="favorilerBtn">Favoriler</button>
+
+<div class="search-container" style="z-index: 1000; ">
+  <input type="search" id="searchInput" placeholder="Kelime veya cümle girin..." autocomplete="off" style=" box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+  <button id="searchBtn" style=" box-shadow: 0 4px 10px rgba(0,0,0,0.5);">Ara</button>
+</div>
+<img src="logo.png" id="logoorta">
+<div id="sakla" class="scroll-wrapper" style="margin: auto; position: relative; overflow-y:auto; border:1px solid #ccc; padding:5px;  box-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+    <div id="results"></div>
+</div>
+<div id="loading" style="display:none; text-align:center; margin: 20px 0;">
+  <span id="araniyoryazi"class="loading-icon">🔍</span> Aranıyor...
+</div>
+<button id="randomBtn" class="ortalapcsol" title="Rastgele Ayet">Rastgele</button>
+<button id="kapatBtn" class="ortalapkapatbtn">× Kapat</button>
+<button id="paylasBtn" title="Kopyala">Kopyala</button>
+<div id="themeToggle" class="ortalapcsag" title="Tema değiştir">
+  <div class="switch"></div>
+  <div id="themeLabel">Açık Mod</div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/ayetler.js"></script>
+
+<div class="footer">
+  <hr class="altcizgi" style="border: none;height: 2px; background-color: #4ea1a3;">
+  <hr class="altcizgi" style="border: none;height: 2px; background-color: #4ea1a3; visibility: hidden; margin-top: 5px;">
+  <div class="fontlar" style="display: flex; justify-content: center; width: 100%; font-size: 15px;  color: #4ea1a3;">
+  <a href="hakkimizda.html" style="color: #4ea1a3; text-decoration: none; cursor: pointer; font-weight: normal;">2025 Ayet Bulucu V7.4</a></div>
+  <hr class="altcizgi" style="border: none;height: 1px; background-color: #4ea1a3; visibility: hidden; margin-top:-3px;">
+  <div style="display: none;" class="footer-right">
+    <button style="display: none;" title="Kapat">✕</button>
+    <a style="display: none;"  href="#" title="YouTube">📺</a>
+    <a style="display: none;" href="#" title="Instagram">📸</a>
+    <a style="display: none;" href="#" title="GitHub">🐱</a>
+    <a style="display: none;" href="#" title="Mail">✉️</a>
+    <a style="display: none;" href="#" title="Diğer">💬</a>
+  </div>
+</div>
+
+</body>
+</html>

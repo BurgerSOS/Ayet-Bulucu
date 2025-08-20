@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/css.css">
+<style>
+    #results{
+        opacity: 1;
+        margin-top: 55px;
+
+    }
+    #themeToggle{
+        position: relative;
+        top:-53px !important;
+        left:500px;
+        margin-top:-10px;
+    }
+    #favorilerBtn{
+       margin-left: -70px;
+    }
+    
+     @media(max-width: 600px) {
+       #favorilerBtn{
+        top:57px !important;
+        left:300px;
+    } 
+    #themeToggle{
+        top:-20px !important;
+        margin-left:-400px !important;
+    }
+  }
+</style>
+<title>Ayet Arama</title>
+</head>
+<body>
+<h1 id="baslik" class="simple-title mobilboyuth1">
+  <a href="" style="text-decoration:none; color:inherit;">Ayet Bulucu</a>
+</h1>
+<hr id="aracizgi" style="border: none; height: 1px; background-color: #4ea1a3; width: 100%; margin: 0;position: relative; top:-37px;">
+<a href="index.html"><button id="favorilerBtn">Ana Sayfa</button></a>
+<div id="themeToggle" class="ortalapcsags" title="Tema değiştir" style="top:60px; margin-left:50px;">
+  <div class="switch"></div>
+  <div id="themeLabel">Açık Mod</div>
+</div>
+<div class="fontlar" id="results" 
+     style="border: 2px solid #2b7a78; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.10); opacity: 0; transition: opacity 3s;">
+  <b><p>Biz, Kur’an’ı daha kolay ve hızlı erişilebilir kılmak için bu platformu oluşturduk. Amacımız, kullanıcıların ayetleri kolayca bulabilmesi, okuyabilmesi ve paylaşabilmesidir.</p></b>
+  <b><p>Sade ve kullanışlı tasarımımız sayesinde aradığınız ayetlere tek tıkla ulaşabilir, favorilerinize ekleyebilir veya sevdiklerinizle paylaşabilirsiniz.</p></b>
+  <b><p>İnanç ve bilgiye saygı çerçevesinde, herkes için güvenli ve hızlı bir deneyim sunmayı hedefliyoruz. Siz de bizimle bu yolculukta olun, Kur’an’ın mesajını daha rahat keşfedin.</p></b>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const results = document.getElementById("results");
+    setTimeout(() => {
+      results.style.opacity = "1"; // 3 saniyede yavaşça görünür
+    }, 100); // küçük gecikme, DOM hazır olsun diye
+  });
+</script>
+
+<img src="images/logo.png" id="logoorta">
+<script src="js/script2.js"></script>
+<div class="footer">
+  <hr class="altcizgi" style="border: none;height: 2px; background-color: #4ea1a3;">
+  <hr class="altcizgi" style="border: none;height: 2px; background-color: #4ea1a3; visibility: hidden; margin-top: 5px;">
+  <div class="fontlar" style="display: flex; justify-content: center; width: 100%; font-size: 15px;  color: #4ea1a3;">
+  <a href="#" style="color: #4ea1a3; text-decoration: none; cursor: pointer; font-weight: normal;">2025 Ayet Bulucu V7.4</a></div>
+  <hr class="altcizgi" style="border: none;height: 1px; background-color: #4ea1a3; visibility: hidden; margin-top:-3px;">
+  <div style="display: none;" class="footer-right">
+    <button style="display: none;" title="Kapat">✕</button>
+    <a style="display: none;"  href="#" title="YouTube">📺</a>
+    <a style="display: none;" href="#" title="Instagram">📸</a>
+    <a style="display: none;" href="#" title="GitHub">🐱</a>
+    <a style="display: none;" href="#" title="Mail">✉️</a>
+    <a style="display: none;" href="#" title="Diğer">💬</a>
+  </div>
+</div>
+</div>
+</body>
+</html>
